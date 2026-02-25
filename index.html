@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sanjeevni Health & Care Hospital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-line">
+        "दवा दवा है, कटु हो या मधुर आरोग्य पाने"
+    </div>
+    <header>
+        <div class="logo">Sanjeevni Health & Care Hospital</div>
+        <nav>
+            <ul>
+                <a href="#home">Home</a>
+                <a href="#faculty-section">Faculty</a>
+                <a href="#" onclick="openLogin()">Login</a>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <img src="images/hospitalPicture.png" alt="Hospital Image">
+    </section>
+    <!-- About Hospital -->
+    <section class="about-hospital" id="home">
+        <h2>About Sanjeevni Health & Care Hospital</h2>
+        <p>
+            Sanjeevni Health & Care Hospital was established in 2015 with the goal of providing reliable, 
+            affordable, and high-quality healthcare services to the community. Since its 
+            beginning, the hospital has focused on creating a safe and comfortable environment 
+            where patients feel cared for and respected. 
+        <p>
+            The mission of Sanjeevni Health & Care Hospital is to improve the health and well-being of people 
+            through ethical medical practices and patient-centered care, while its vision is 
+            to become a trusted healthcare institution known for quality, innovation, and 
+            social responsibility. The hospital offers a wide range of healthcare services 
+            including general medicine, emergency care, diagnostic services, outpatient 
+            consultation, and basic surgical support.
+        </p>
+    </section>
+    <!-- About Founder -->
+    <section class="about-founder">
+        <h2>About the Founders</h2>
+        <p>
+            Sanjeevni Health & Care Hospital was founded under the guidance and leadership of 
+            <b>Br. Deepa Didi</b> from Vidisha, Madhya Pradesh, and 
+            <b>Br. Nidhi Didi</b> from Guna, Madhya Pradesh. 
+            Both founders have played a key role in establishing the hospital with 
+            a strong belief in serving society through ethical and compassionate healthcare. 
+            Their dedication and clear vision have been the foundation on which 
+            Sanjeevni Hospital has grown as a trusted healthcare institution focused on 
+            patient well-being and dignity.
+        </p>
+
+        <p>
+            Their vision is to provide quality healthcare 
+            services that are accessible, honest, and patient-centered. Under their leadership, 
+            Sanjeevni Hospital promotes a culture of respect, safety, and continuous improvement 
+            among doctors, nurses, and staff members. Their guidance inspires the entire medical 
+            team to work with commitment and empathy, ensuring that every patient receives care 
+            with professionalism, trust, and humanity.
+        </p>
+    </section>
+    <section id="faculty-section">
+    <h2>Our Faculty</h2>
+
+    <div class="faculty-card">
+        <strong>Aarya Nayak (BAMS)</strong>
+        <p>Experience: 10+ years</p>
+        <p>Expert in Ayurvedic and holistic treatment.</p>
+        <button onclick="toggleAvailability(this)">Check Availability</button>
+        <p class="availability hidden">Available: Cabin A (10 AM – 2 PM)</p>
+    </div>
+
+    <div class="faculty-card">
+        <strong>Soumya Shah (Dentist)</strong>
+        <p>Experience: 10+ years</p>
+        <p>Specialist in dental and oral care.</p>
+        <button onclick="toggleAvailability(this)">Check Availability</button>
+        <p class="availability hidden">Available: Dental Block (11 AM – 4 PM)</p>
+    </div>
+    <div class="faculty-card">
+        <strong>Aastha Nayak (MBBS)</strong>
+        <p>Experience: 10+ years</p>
+        <p>General physician and patient care expert.</p>
+        <button onclick="toggleAvailability(this)">Check Availability</button>
+        <p class="availability hidden">Available: Cabin C (9 AM – 1 PM)</p>
+    </div>
+
+    <div class="faculty-card">
+        <strong>Saloni Yadav (MBBS)</strong>
+        <p>Experience: 10+ years</p>
+        <p>Expert in diagnosis and medical consultation.</p>
+        <button onclick="toggleAvailability(this)">Check Availability</button>
+        <p class="availability hidden">Available: Cabin D (2 PM – 6 PM)</p>
+    </div>
+
+    <button class="more-btn" onclick="showMoreFaculty()">More Faculty</button>
+
+    <div id="moreFaculty" class="hidden">
+        <div class="faculty-card">
+            <strong>Aashi Singhai (Orthologist)</strong>
+            <p>Experience: 10+ years</p>
+            <p>Bone and joint disorder specialist.</p>
+            <button onclick="toggleAvailability(this)">Check Availability</button>
+            <p class="availability hidden">Available: Ortho Wing (10 AM – 3 PM)</p>
+        </div>
+
+        <div class="faculty-card">
+            <strong>Sanchita Jain (MBBS, Chemist)</strong>
+            <p>Experience: 10+ years</p>
+            <p>Expert in pharmaceutical guidance.</p>
+            <button onclick="toggleAvailability(this)">Check Availability</button>
+            <p class="availability hidden">Available: Pharmacy (12 PM – 5 PM)</p>
+        </div>
+    </div>
+    </section>
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+    <div class="modal-content">
+        <h3>Choose who you are</h3>
+        <button onclick="openPatientLogin()">Patient</button>
+        <button onclick="openEmployeeLogin()">Employee</button>
+        <br><br>
+        <button onclick="closeLogin()">Close</button>
+    </div>
+</div>
+<!-- Patient Login Modal -->
+    <div class="modal" id="patientModal">
+    <div class="modal-content">
+        <h3>Patient Login</h3>
+        <input type="text" placeholder="Patient ID">
+        <input type="password" placeholder="Password">
+        <button>Login</button>
+        <br><br>
+        <button onclick="closePatientLogin()">Close</button>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
