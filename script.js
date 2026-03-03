@@ -1,6 +1,3 @@
-function toggleSearchMenu() {
-    document.getElementById("searchMenu").classList.toggle("hidden");
-}
 
 function showAvailability(button) {
     button.nextElementSibling.classList.toggle("hidden");
