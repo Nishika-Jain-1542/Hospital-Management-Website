@@ -7,9 +7,9 @@
 </head>
 <body>
     <!-- TOP LINE -->
-    <div class="top-line">
-         दवा दवा है, कटु हो या मधुर आरोग्य पाने
-    </div>
+    <div class="top-line"><b>
+         "दवा दवा है, कटु हो या मधुर आरोग्य पाने"
+    </b></div>
     <!-- HEADER -->
     <header>
         <nav class="navbar">
@@ -27,7 +27,7 @@
                 </h1>
             </div>
             <ul class="nav-links">
-                <li><a href="hospitalManagement\index.html">HOME</a></li>
+                <li><a href="/hospitalManagement/index.html">HOME</a></li>
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#founder">FOUNDERS</a></li>
                 <li><a href="#doctors">DOCTORS</a></li>
@@ -47,16 +47,16 @@
         <h2 style="color:#245f60">About Sanjeevni Health & Care Hospital</h2>
         <div class="info-card">
             <p>
-                Sanjeevni Health & Care Hospital was established in 2015 with the goal of providing reliable, 
-                affordable, and high-quality healthcare services to the community. Since its 
+                <b>Sanjeevni Health & Care Hospital</b> was established in 2015 with the goal of providing <b>reliable, 
+                affordable, and high-quality</b> healthcare services to the community. Since its 
                 beginning, the hospital has focused on creating a safe and comfortable environment 
                 where patients feel cared for and respected.
             </p> 
             <p>
-                The mission of Sanjeevni Health & Care Hospital is to improve the health and well-being of people 
-                through ethical medical practices and patient-centered care, while its vision is 
-                to become a trusted healthcare institution known for quality, innovation, and 
-                social responsibility. The hospital offers a wide range of healthcare services 
+                The mission of Sanjeevni Health & Care Hospital is <b>to improve the health and well-being of people 
+                through ethical medical practices and patient-centered care</b>, while its vision is 
+                <b>to become a trusted healthcare institution known for quality, innovation, and 
+                social responsibility.</b> The hospital offers a wide range of healthcare services 
                 including general medicine, emergency care, diagnostic services, outpatient 
                 consultation, and basic surgical support.
             </p>
@@ -67,76 +67,105 @@
         <h2 style="color:#245f60">About the Founder</h2>
         <div class="info-card">
             <p>
-                Sanjeevni Health & Care Hospital was founded under the guidance and leadership of 
+                <b>Sanjeevni Health & Care Hospital</b> was founded under the guidance and leadership of 
                 <b>Br. Deepa Didi</b> from Vidisha, Madhya Pradesh, and 
                 <b>Br. Nidhi Didi</b> from Guna, Madhya Pradesh. 
                 Both founders have played a key role in establishing the hospital with 
                 a strong belief in serving society through ethical and compassionate healthcare. 
                 Their dedication and clear vision have been the foundation on which 
-                Sanjeevni Hospital has grown as a trusted healthcare institution focused on 
-                patient well-being and dignity.
+                Sanjeevni Hospital has grown as <b>a trusted healthcare institution focused on 
+                patient well-being and dignity.</b>
             </p><br>
             <p>
                 Their vision is to provide quality healthcare services that are accessible, honest, and patient-centered. Under their leadership, 
                 Sanjeevni Hospital promotes a culture of respect, safety, and continuous improvement among doctors, nurses, and staff members. Their guidance inspires the entire medical 
-                team to work with commitment and empathy, ensuring that every patient receives care with professionalism, trust, and humanity.
+                team to work with commitment and empathy, ensuring that<b> every patient receives care with professionalism, trust, and humanity</b>.
             </p>
         </div>
     </section>
 
     <!-- DOCTORS -->
-    <section id="doctors">
-        <h2 style="color:#ffffff">Our Doctors</h2>
+    <section id="doctors" class="doctor-section">
+        <h2 style="color:#ffffff">Our Specialist Doctors</h2>
 
-        <div class="card-container">
+        <div class="doctor-container">
 
             <div class="doctor-card">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFnHZZFBkc4rKJk4sdfDjf8Q7MVGYA1J8Lww&s" alt="Doctor Image" class="photo-placeholder">
-                <h4>Aarya Nayak (BAMS)</h4>
-                <p>13 years experience</p>
-                <button onclick="showAvailability(this)">Check Availability</button>
-                <div class="availability hidden">
-                    <p><b>Cabin:</b> A-101</p>
-                    <p><b>Time:</b> 10 AM – 2 PM</p>
-                </div>
-                </div>
-
-            <div class="doctor-card">
-                <img src="https://i.pinimg.com/736x/3b/5b/28/3b5b28c8c3c95982df2382c8ef545c86.jpg" alt="Doctor Image" class="photo-placeholder">
-                <h4>Aastha Nayak (MBBS)</h4>
-                <p>12 years experience</p>
-                <button onclick="showAvailability(this)">Check Availability</button>
-                <div class="availability hidden">
-                    <p><b>Cabin:</b> C-210</p>
-                    <p><b>Time:</b> 9 AM – 1 PM</p>
-                </div>
+                <h3>Dr. Aarya Nayak</h3>
+                <p class="degree">BAMS - Ayurvedic Physician</p>
+                <p>13 Years Experience</p>
+                <button onclick="openDoctor('aarya')"> Check Availability </button>
             </div>
-
             <div class="doctor-card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlF2YZaNzR57Ci-NSBIiBDxQD7S8oZZskHQg&s" alt="Doctor Image" class="photo-placeholder">
-                <h4>Saloni Yadav (MBBS)</h4>
-                <p>16 years experience</p>
-                <button onclick="showAvailability(this)">Check Availability</button>
-                <div class="availability hidden">
-                    <p><b>Cabin:</b> D-305</p>
-                    <p><b>Time:</b> 2 PM – 6 PM</p>
-                </div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFnHZZFBkc4rKJk4sdfDjf8Q7MVGYA1J8Lww&s" alt="Doctor Image" class="photo-placeholder">
+                <h3>Dr. Aastha Nayak</h3>
+                <p class="degree">MBBS - General Physician</p>
+                <p>10 Years Experience</p>
+                <button onclick="openDoctor('aastha')"> Check Availability </button>
             </div>
-
             <div class="doctor-card">
-                <img src="https://img.freepik.com/premium-photo/illustration-woman-s-doctor-career-images-with-ai-generated_545052-1880.jpg" alt="Doctor Image" class="photo-placeholder">
-                <h4>Sanchita Jain (Dentist)</h4>
-                <p>13 years experience</p>
-                <button onclick="showAvailability(this)">Check Availability</button>
-                <div class="availability hidden">
-                    <p><b>Cabin:</b> Dental Wing</p>
-                    <p><b>Time:</b> 11 AM – 4 PM</p>
-                </div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFnHZZFBkc4rKJk4sdfDjf8Q7MVGYA1J8Lww&s" alt="Doctor Image" class="photo-placeholder">
+                <h3>Dr. Sanchita Jain</h3>
+                <p class="degree">Neurosurgeon</p>
+                <p>10 Years Experience</p>
+                <button onclick="openDoctor('sanchita')"> Check Availability </button>
+            </div>
+            <div class="doctor-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFnHZZFBkc4rKJk4sdfDjf8Q7MVGYA1J8Lww&s" alt="Doctor Image" class="photo-placeholder">
+                <h3>Dr. Saloni Yadav</h3>
+                <p class="degree">MBBS - General Physician</p>
+                <p>16 Years Experience</p>
+                <button onclick="openDoctor('saloni')"> Check Availability </button>
+            </div>
+            <div class="doctor-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFnHZZFBkc4rKJk4sdfDjf8Q7MVGYA1J8Lww&s" alt="Doctor Image" class="photo-placeholder">
+                <h3>Dr. Aashi Singhai</h3>
+                <p class="degree">Cardiologist</p>
+                <p>14 Years Experience</p>
+                <button onclick="openDoctor('aashi')"> Check Availability </button>
+            </div>
+            <div class="doctor-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFnHZZFBkc4rKJk4sdfDjf8Q7MVGYA1J8Lww&s" alt="Doctor Image" class="photo-placeholder">
+                <h3>Dr. Soumya Shah</h3>
+                <p class="degree">Cardiologist</p>
+                <p>8 Years Experience</p>
+                <button onclick="openDoctor('soumya')"> Check Availability </button>
+            </div>
+            <div class="doctor-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFnHZZFBkc4rKJk4sdfDjf8Q7MVGYA1J8Lww&s" alt="Doctor Image" class="photo-placeholder">
+                <h3>Dr. Ronak Jain</h3>
+                <p class="degree">Dentist</p>
+                <p>7 Years Experience</p>
+                <button onclick="openDoctor('ronak')"> Check Availability </button>
+            </div>
+            <div class="doctor-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFnHZZFBkc4rKJk4sdfDjf8Q7MVGYA1J8Lww&s" alt="Doctor Image" class="photo-placeholder">
+                <h3>Dr. Salini Yadav</h3>
+                <p class="degree">Anesthesiologist</p>
+                <p>5 Years Experience</p>
+                <button onclick="openDoctor('salini')"> Check Availability </button>
             </div>
 
         </div>
     </section>
+    <!-- Doctor Detail Popup -->
+    <div class="doctor-popup" id="doctorPopup">
 
+        <div class="popup-content">
+            <span class="close" onclick="closeDoctor()">✖</span>
+            <h2 id="docName"></h2>
+            <p><b>Specialization:</b> <span id="docSpec"></span></p>
+            <p><b>Education:</b> <span id="docEdu"></span></p>
+            <p><b>Experience:</b> <span id="docExp"></span></p>
+            <p><b>Cabin:</b> <span id="docCabin"></span></p>
+            <p><b>Available:</b> <span id="docTime"></span></p>
+            <p><b>Phone:</b> <span id="docPhone"></span></p>
+            <p><b>Email:</b> <span id="docEmail"></span></p>
+            <p><b>About Doctor:</b> <span id="docAbout"></span></p>
+        </div>
+
+    </div>
     <!-- LOGIN MODAL -->
     <div id="loginModal" class="modal hidden">
         <div class="modal-box">
@@ -157,6 +186,118 @@
             <button onclick="closePatient()">Close</button>
         </div>
     </div>
+    <div class="faq-container">
+  <h2>Frequently Asked Questions</h2>
+  
+  <div class="faq-list">
+    <div class="faq-item">
+      <input type="checkbox" id="faq1">
+      <label class="faq-question" for="faq1">
+        What kinds of services do you offer?
+        <span class="icon"></span>
+      </label>
+      <div class="faq-answer">
+        <p>We provide general consultation, emergency care, diagnostic tests, pharmacy services, specialist consultations, surgeries, and preventive health checkups.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input type="checkbox" id="faq2">
+      <label class="faq-question" for="faq2">
+        Do you provide emergency services?
+        <span class="icon"></span>
+      </label>
+      <div class="faq-answer">
+        <p>Yes, our hospital provides 24/7 emergency medical services.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input type="checkbox" id="faq3">
+      <label class="faq-question" for="faq3">
+        Are specialist doctors available?
+        <span class="icon"></span>
+      </label>
+      <div class="faq-answer">
+        <p>Yes, we have experienced specialists for different health conditions.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input type="checkbox" id="faq4">
+      <label class="faq-question" for="faq4">
+        What should I bring for my first visit?
+        <span class="icon"></span>
+      </label>
+      <div class="faq-answer">
+        <p>Please bring your ID, previous medical reports, and prescriptions if available.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<pre>
+
+
+
+
+</pre>
     <script src="script.js"></script>
 </body>
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <!-- Hospital Info -->
+    <div class="footer-section">
+      <h2>Sanjeevni Hospital</h2>
+      <p>Providing trusted healthcare with modern facilities and experienced doctors dedicated to patient care.</p>
+    </div>
+
+    <!-- Services -->
+    <div class="footer-section">
+      <h3>Our Services</h3>
+      <ul>
+        <li>Emergency Care</li>
+        <li>Cardiology</li>
+        <li>Neurology</li>
+        <li>Dentistry</li>
+        <li>General Medicine</li>
+      </ul>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="hospitalManagement\index.html">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#founder">FOUNDERS</a></li>
+        <li><a href="#doctors">DOCTORS</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-section">
+      <h3>Contact Us</h3>
+      <p>📍 In Bharat</p>
+      <p>📞 +91 98971 XXXXX</p>
+      <p>📧 sanjeevnihospital@gmail.com</p>
+    </div>
+
+  </div>
+
+  <!-- Developer Credit -->
+  <div class="footer-bottom">
+    <p>
+      © 2026 Sanjeevni Hospital | Website developed by <strong>Nishika Jain</strong>
+    </p>
+
+    <div class="developer-links">
+      <a href="mailto:modinishika1542@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/nishikajn44/">LinkedIn</a>
+      <a href="https://github.com/Nishika-Jain-1542">GitHub</a>
+    </div>
+  </div>
+
+</footer>
 </html>

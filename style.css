@@ -189,7 +189,7 @@ img {
 
 /* INFO SECTIONS */
 .info-section {
-    padding: 70px 8%;
+    padding: 50px 5%;
     background: var(--brand-soft);
 }
 
@@ -199,7 +199,7 @@ img {
 
 .info-section h2 {
     text-align: center;
-    margin-bottom: 26px;
+    margin-bottom: 20px;
     font-size: 24px;
     letter-spacing: 0.04em;
 }
@@ -220,42 +220,49 @@ img {
 }
 
 /* DOCTORS GRID */
-#doctors {
-    padding: 70px 8%;
-    background: #245f60;
+.doctor-section{
+padding:50px;
+text-align:center;
 }
 
-#doctors h2 {
-    text-align: center;
-    margin-bottom: 26px;
-    font-size: 24px;
+h2{
+margin-bottom:40px;
 }
 
-.card-container {
-    max-width: 1100px;
-    margin: 0 auto;
+.doctor-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    gap: 24px;
+    gap: 30px;
 }
 
 .doctor-card {
     background: #ffffff;
-    border-radius: 8px;
-    padding: 18px 16px;
-    text-align: center;
-    border: 1px solid var(--border);
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
 }
 
-.doctor-card h4 {
-    margin: 10px 0 4px;
-    font-size: 16px;
+.doctor-card:hover{
+transform:translateY(-8px);
 }
 
-.doctor-card p {
-    margin: 0 0 10px;
-    font-size: 14px;
-    color: var(--muted);
+.doctor-card:hover{
+transform:translateY(-8px);
+}
+
+button{
+margin-top:15px;
+padding:10px 20px;
+background:#2f6f73;
+color:white;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
+
+button:hover{
+background:#25585b;
 }
 
 .photo-placeholder {
@@ -266,7 +273,30 @@ img {
     margin: 6px auto 10px;
 }
 
-.availability {
+/* Popup */
+
+.doctor-popup{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.7);
+justify-content:center;
+align-items:center;
+}
+
+.popup-content{
+background:white;
+padding:40px;
+border-radius:10px;
+width:450px;
+text-align:left;
+position:relative;
+}
+
+/* .availability {
     margin-top: 10px;
     padding-top: 8px;
     border-top: 1px solid var(--border);
@@ -276,10 +306,10 @@ img {
 
 .availability p {
     margin: 4px 0;
-}
+} */
 
 /* BUTTONS & FORMS (for doctor cards + modals) */
-button {
+/* button {
     border: none;
     border-radius: 4px;
     padding: 8px 14px;
@@ -301,7 +331,7 @@ input {
     border-radius: 4px;
     border: 1px solid var(--border);
     font-size: 14px;
-}
+} */
 
 /* MODALS */
 .modal {
@@ -335,7 +365,145 @@ input {
     display: none;
 }
 
-/* RESPONSIVE TWEAKS */
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-container h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.faq-item {
+  width: 100%;
+}
+
+.faq-item input[type="checkbox"] {
+  display: none;
+}
+
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fefdfd;
+  padding: 20px 30px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  user-select: none;
+}
+
+.faq-question:hover {
+  background-color: #fefdfd;
+}
+
+
+.icon::before {
+  content: '+';
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.faq-answer {
+  background-color: #f1f0f0;
+  margin-top: 1px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+}
+
+.faq-answer p {
+  padding: 25px 30px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.faq-item input:checked ~ .faq-answer {
+  max-height: 600px; 
+}
+
+.faq-item input:checked ~ .faq-question .icon {
+  transform: rotate(45deg);
+  display: inline-block;
+}
+
+.footer{
+  background:#0a2540;
+  color:white;
+  padding-top:40px;
+  font-family:Arial, sans-serif;
+}
+
+.footer-container{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-around;
+  padding:20px;
+}
+
+.footer-section{
+  width:220px;
+  margin:10px;
+}
+
+.footer-section h2,
+.footer-section h3{
+  margin-bottom:15px;
+  color:#4db8ff;
+}
+
+.footer-section ul{
+  list-style:none;
+  padding:0;
+}
+
+.footer-section ul li{
+  margin-bottom:8px;
+}
+
+.footer-section ul li a{
+  text-decoration:none;
+  color:white;
+  transition:0.3s;
+}
+
+.footer-section ul li a:hover{
+  color:#4db8ff;
+}
+
+.footer-section p{
+  font-size:14px;
+}
+
+.footer-bottom{
+  border-top:1px solid rgba(255,255,255,0.2);
+  text-align:center;
+  padding:15px;
+  margin-top:20px;
+}
+
+.developer-links a{
+  margin:0 10px;
+  color:#4db8ff;
+  text-decoration:none;
+  font-size:14px;
+}
+
+.developer-links a:hover{
+  text-decoration:underline;
+}
+
 @media (max-width: 768px) {
     .navbar {
         padding: 14px 6%;
